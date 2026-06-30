@@ -1,4 +1,4 @@
-# 安卓加速器 | 6月23日21.4M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐  更新时间 2026-06-23 09:00:08
+# 安卓加速器 | 6月30日23M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐  更新时间 2026-06-30 08:21:48
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://androidjiasuqi.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://androidjiasuqi.github.io/uploads/2026/06/0-20260623.yaml
-- https://androidjiasuqi.github.io/uploads/2026/06/1-20260623.yaml
-- https://androidjiasuqi.github.io/uploads/2026/06/2-20260623.yaml
-- https://androidjiasuqi.github.io/uploads/2026/06/3-20260623.yaml
-- https://androidjiasuqi.github.io/uploads/2026/06/4-20260623.yaml
+- https://androidjiasuqi.github.io/uploads/2026/06/0-20260630.yaml
+- https://androidjiasuqi.github.io/uploads/2026/06/1-20260630.yaml
+- https://androidjiasuqi.github.io/uploads/2026/06/2-20260630.yaml
+- https://androidjiasuqi.github.io/uploads/2026/06/3-20260630.yaml
+- https://androidjiasuqi.github.io/uploads/2026/06/4-20260630.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://androidjiasuqi.github.io/uploads/2026/06/0-20260623.txt
-- https://androidjiasuqi.github.io/uploads/2026/06/1-20260623.txt
-- https://androidjiasuqi.github.io/uploads/2026/06/2-20260623.txt
-- https://androidjiasuqi.github.io/uploads/2026/06/3-20260623.txt
-- https://androidjiasuqi.github.io/uploads/2026/06/4-20260623.txt
+- https://androidjiasuqi.github.io/uploads/2026/06/0-20260630.txt
+- https://androidjiasuqi.github.io/uploads/2026/06/1-20260630.txt
+- https://androidjiasuqi.github.io/uploads/2026/06/2-20260630.txt
+- https://androidjiasuqi.github.io/uploads/2026/06/3-20260630.txt
+- https://androidjiasuqi.github.io/uploads/2026/06/4-20260630.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://androidjiasuqi.github.io/uploads/2026/06/20260623.json
+- https://androidjiasuqi.github.io/uploads/2026/06/20260630.json
 
 ## 更多Clash节点订阅 ：
 
