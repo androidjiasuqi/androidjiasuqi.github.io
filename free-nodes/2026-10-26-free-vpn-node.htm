@@ -451,39 +451,14 @@ A：如 Apple 官网、微信支付、国内银行服务等敏感平台，应始
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 多策略组如何管理大量节点？</h5></div>
-    <div class="panel-body">
-        多策略组可将节点按地区、延迟或用途分类，并结合规则文件自动分流流量。这样可快速选择最优节点，提高访问速度和稳定性，同时优化节点管理和维护效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 协议的核心优势是什么？</h5></div>
-    <div class="panel-body">
-        VMess 是 V2Ray 项目的核心协议，支持加密、认证和多路复用功能。它能有效防止中间人攻击和流量识别，具有较高的安全性和灵活性，是目前科学上网中最常见的加密协议之一。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 的路由规则能否实现分国家代理？</h5></div>
-    <div class="panel-body">
-        Sing-box 支持 GeoIP 路由规则，通过引入国家数据库可根据 IP 自动判断地理位置。例如可设置 CN 走直连，US/JP 走代理，以此实现分国家策略路由，适合需要访问不同地区内容的用户。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan 协议是如何伪装流量的？</h5></div>
     <div class="panel-body">
         Trojan 利用 HTTPS 协议进行传输伪装，通过 TLS 加密实现高度隐蔽性。它让代理流量看起来与普通网站访问完全相同，从而难以被防火墙检测，是目前安全性较高的代理方案之一。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 如何通过命令行管理配置？</h5></div>
+    <div class="panel-heading"><h5>V2Ray 的流量分流如何与防火墙配合使用？</h5></div>
     <div class="panel-body">
-        Clash 内置命令行接口，可用于启动、停止、切换配置或查看日志。通过命令行运行 `clash -f config.yaml` 可加载指定配置文件，适合服务器或无人值守场景。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 的用户管理面板有哪些功能？</h5></div>
-    <div class="panel-body">
-        Hiddify Next 面板可添加或删除用户、设置带宽限制、生成订阅链接、查看流量统计和节点状态。它提供直观的图形界面，无需命令行操作即可管理服务器资源。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何实现流量精细分流？</h5></div>
-    <div class="panel-body">
-        通过定义 routing 规则和策略组，Sing-box 可以根据域名、IP、端口或协议类型精细分流流量。例如视频走高速节点，网页走备用节点，实现流量优化和网络加速。<hr />    </div>
+        通过 V2Ray 的路由规则，可将指定流量通过代理出口，而防火墙限制其他流量直连。结合防火墙规则可以实现对内部网络访问和外部代理流量的精准控制。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 的域名规则如何实现分流？</h5></div>
@@ -491,14 +466,39 @@ A：如 Apple 官网、微信支付、国内银行服务等敏感平台，应始
         Sing-box 支持按域名匹配流量，将不同网站或应用流量分配到指定节点。结合策略组自动切换低延迟节点，可优化访问速度，保证网络稳定性并提高整体体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 如何通过命令行管理配置？</h5></div>
+    <div class="panel-body">
+        Clash 内置命令行接口，可用于启动、停止、切换配置或查看日志。通过命令行运行 `clash -f config.yaml` 可加载指定配置文件，适合服务器或无人值守场景。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 多策略组如何管理大量节点？</h5></div>
+    <div class="panel-body">
+        多策略组可将节点按地区、延迟或用途分类，并结合规则文件自动分流流量。这样可快速选择最优节点，提高访问速度和稳定性，同时优化节点管理和维护效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 的路由规则能否实现分国家代理？</h5></div>
+    <div class="panel-body">
+        Sing-box 支持 GeoIP 路由规则，通过引入国家数据库可根据 IP 自动判断地理位置。例如可设置 CN 走直连，US/JP 走代理，以此实现分国家策略路由，适合需要访问不同地区内容的用户。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 支持测速功能吗？</h5></div>
     <div class="panel-body">
         支持。WinXray 提供节点延迟测速功能，可检测每个节点的响应时间与可用性。测速结果能帮助用户选择最快线路，也能排除无效或不稳定的节点，提高整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的流量分流如何与防火墙配合使用？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 如何实现流量精细分流？</h5></div>
     <div class="panel-body">
-        通过 V2Ray 的路由规则，可将指定流量通过代理出口，而防火墙限制其他流量直连。结合防火墙规则可以实现对内部网络访问和外部代理流量的精准控制。    </div>
+        通过定义 routing 规则和策略组，Sing-box 可以根据域名、IP、端口或协议类型精细分流流量。例如视频走高速节点，网页走备用节点，实现流量优化和网络加速。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 的用户管理面板有哪些功能？</h5></div>
+    <div class="panel-body">
+        Hiddify Next 面板可添加或删除用户、设置带宽限制、生成订阅链接、查看流量统计和节点状态。它提供直观的图形界面，无需命令行操作即可管理服务器资源。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess 协议的核心优势是什么？</h5></div>
+    <div class="panel-body">
+        VMess 是 V2Ray 项目的核心协议，支持加密、认证和多路复用功能。它能有效防止中间人攻击和流量识别，具有较高的安全性和灵活性，是目前科学上网中最常见的加密协议之一。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -546,16 +546,16 @@ A：如 Apple 官网、微信支付、国内银行服务等敏感平台，应始
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-9-16-free-node-subscribe.htm" title="安卓加速器 | 9月16日18.9M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月16日18.9M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-14-free-vpn-node.htm" title="安卓加速器 | 10月14日19.2M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月14日19.2M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-20-vpn-proxy.htm" title="安卓加速器 | 9月20日20.5M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月20日20.5M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Clash节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-9-23.htm" title="安卓加速器 | 9月23日19.4M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月23日19.4M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-18-free-node-subscribe.htm" title="安卓加速器 | 9月18日19.4M/S|免费Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月18日19.4M/S|免费Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-7.htm" title="安卓加速器 | 9月7日21.8M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月7日21.8M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-10-17.htm" title="安卓加速器 | 10月17日21.6M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月17日21.6M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-10-9.htm" title="安卓加速器 | 10月9日20.6M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月9日20.6M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-10-28-top-vpn-node.htm" title="安卓加速器 | 10月28日18.8M/S|免费V2ray节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月28日18.8M/S|免费V2ray节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-8-top-vpn-node.htm" title="安卓加速器 | 9月8日23M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月8日23M/S|免费V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-26-free-vpn-node.htm" title="安卓加速器 | 10月26日18.6M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Trojan节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月26日18.6M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Trojan节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-4-vpn-node.htm" title="安卓加速器 | 9月4日20.8M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月4日20.8M/S|免费Clash节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-11-2-vpn-node.htm" title="安卓加速器 | 11月2日21.2M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 11月2日21.2M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-10-20-vpn-proxy.htm" title="安卓加速器 | 10月20日22.5M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月20日22.5M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-10-3.htm" title="安卓加速器 | 10月3日19.3M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月3日19.3M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/Clash节点/V2ray节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-10-31.htm" title="安卓加速器 | 10月31日19.5M/S|免费Singbox节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月31日19.5M/S|免费Singbox节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-10-25.htm" title="安卓加速器 | 10月25日22.4M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月25日22.4M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-10-19.htm" title="安卓加速器 | 10月19日21.2M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月19日21.2M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -567,7 +567,10 @@ A：如 Apple 官网、微信支付、国内银行服务等敏感平台，应始
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>

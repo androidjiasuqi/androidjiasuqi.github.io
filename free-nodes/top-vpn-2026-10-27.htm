@@ -249,9 +249,9 @@ Clash不仅支持Windows、macOS和Linux等多个平台，还为移动端设备�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 的策略组支持按延迟选择节点吗？</h5></div>
+    <div class="panel-heading"><h5>QuantumultX 与 Shadowrocket 相比的最大区别是什么？</h5></div>
     <div class="panel-body">
-        支持。Sing-box 会根据节点延迟自动选择最优节点，结合策略组和路由规则，实现智能分流。延迟最低的节点优先被使用，提高网络访问速度和稳定性。<hr />    </div>
+        QuantumultX 在规则系统和自动化脚本上更灵活，支持丰富的 rewrite 与 filter 功能，而 Shadowrocket 则更轻便易用，适合普通用户快速切换节点。二者可根据使用习惯与功能需求选择。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 的策略组支持哪些节点选择策略？</h5></div>
@@ -259,29 +259,9 @@ Clash不仅支持Windows、macOS和Linux等多个平台，还为移动端设备�
         支持按延迟选择、随机选择、轮询或手动选择节点。结合规则匹配，用户可实现不同网站或应用使用不同节点，提高访问速度和网络稳定性，同时降低管理复杂度。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 使用透明代理时如何避免 DNS 泄露？</h5></div>
-    <div class="panel-body">
-        在 Mellow 中启用 fake-ip 或内置 DNS 解析功能，并将上游 DNS 指定为 DoH/DoT 服务，确保所有 DNS 请求通过代理转发而非本地解析，从而避免 ISP 或本地网络捕获实际访问域名。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 节点延迟排序如何提高访问速度？</h5></div>
-    <div class="panel-body">
-        Matsuri 定期测速节点延迟，结合策略组自动选择延迟最低节点处理流量。用户无需手动切换节点即可保持高速访问，提高网页浏览、视频播放和游戏体验的稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 的脚本功能能实现哪些高级操作？</h5></div>
-    <div class="panel-body">
-        QuantumultX 支持 JavaScript 脚本，可用于请求重写、数据修改、自动签到、广告拦截等功能。用户可通过脚本中心导入开源脚本，极大增强应用的灵活性与自动化能力。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>QuantumultX 支持哪些类型的重写脚本？</h5></div>
     <div class="panel-body">
         QuantumultX 支持 JavaScript 脚本，可修改请求头、响应内容、自动跳转、广告屏蔽和定制流量处理。结合策略组，可实现高度个性化的网络访问控制和优化。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 策略组如何实现节点优先级切换？</h5></div>
-    <div class="panel-body">
-        用户可以在 Clash 策略组中设置节点优先级，结合规则文件自动选择延迟低、稳定性高的节点处理流量。优化网页浏览、视频播放和游戏访问速度，提高整体网络效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 的 TLS 选项何时使用最合适？</h5></div>
@@ -289,14 +269,34 @@ Clash不仅支持Windows、macOS和Linux等多个平台，还为移动端设备�
         TLS 可提供加密和伪装，适合在高封锁或不稳定网络环境使用。结合域名伪装和证书，可让流量看起来像普通 HTTPS 请求，提升抗封锁能力和隐蔽性。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Matsuri 节点延迟排序如何提高访问速度？</h5></div>
+    <div class="panel-body">
+        Matsuri 定期测速节点延迟，结合策略组自动选择延迟最低节点处理流量。用户无需手动切换节点即可保持高速访问，提高网页浏览、视频播放和游戏体验的稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>V2RayA 在 Linux 系统中如何开机自启？</h5></div>
     <div class="panel-body">
         可通过 systemd 创建启动项或在启动脚本中添加 V2RayA 启动命令。编辑 /etc/systemd/system/v2raya.service 文件并设置 `Restart=always`，执行 `systemctl enable v2raya` 使其随系统自动启动。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 与 Shadowrocket 相比的最大区别是什么？</h5></div>
+    <div class="panel-heading"><h5>Clash 策略组如何实现节点优先级切换？</h5></div>
     <div class="panel-body">
-        QuantumultX 在规则系统和自动化脚本上更灵活，支持丰富的 rewrite 与 filter 功能，而 Shadowrocket 则更轻便易用，适合普通用户快速切换节点。二者可根据使用习惯与功能需求选择。    </div>
+        用户可以在 Clash 策略组中设置节点优先级，结合规则文件自动选择延迟低、稳定性高的节点处理流量。优化网页浏览、视频播放和游戏访问速度，提高整体网络效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 使用透明代理时如何避免 DNS 泄露？</h5></div>
+    <div class="panel-body">
+        在 Mellow 中启用 fake-ip 或内置 DNS 解析功能，并将上游 DNS 指定为 DoH/DoT 服务，确保所有 DNS 请求通过代理转发而非本地解析，从而避免 ISP 或本地网络捕获实际访问域名。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 的策略组支持按延迟选择节点吗？</h5></div>
+    <div class="panel-body">
+        支持。Sing-box 会根据节点延迟自动选择最优节点，结合策略组和路由规则，实现智能分流。延迟最低的节点优先被使用，提高网络访问速度和稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>QuantumultX 的脚本功能能实现哪些高级操作？</h5></div>
+    <div class="panel-body">
+        QuantumultX 支持 JavaScript 脚本，可用于请求重写、数据修改、自动签到、广告拦截等功能。用户可通过脚本中心导入开源脚本，极大增强应用的灵活性与自动化能力。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -344,16 +344,16 @@ Clash不仅支持Windows、macOS和Linux等多个平台，还为移动端设备�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-9-24-free-node-subscribe.htm" title="安卓加速器 | 9月24日21.7M/S|免费SSR节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月24日21.7M/S|免费SSR节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-10-19.htm" title="安卓加速器 | 10月19日21.2M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月19日21.2M/S|免费Trojan节点/Shadowrocket节点/V2ray节点/Singbox节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-10-23.htm" title="安卓加速器 | 10月23日22.5M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月23日22.5M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Trojan节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-10-vpn-free.htm" title="安卓加速器 | 9月10日23M/S|免费SSR节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月10日23M/S|免费SSR节点/Singbox节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-29.htm" title="安卓加速器 | 9月29日18.2M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月29日18.2M/S|免费SSR节点/V2ray节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-7.htm" title="安卓加速器 | 9月7日21.8M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月7日21.8M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-9-11.htm" title="安卓加速器 | 9月11日21.9M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月11日21.9M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Trojan节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/share-vpn-2026-9-13.htm" title="安卓加速器 | 9月13日22.6M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月13日22.6M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-10-11.htm" title="安卓加速器 | 10月11日21.4M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月11日21.4M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-9-17.htm" title="安卓加速器 | 9月17日18.2M/S|免费Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月17日18.2M/S|免费Trojan节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-18-free-node-subscribe.htm" title="安卓加速器 | 9月18日19.4M/S|免费Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月18日19.4M/S|免费Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-28-vpn-node.htm" title="安卓加速器 | 9月28日19.7M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月28日19.7M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-9-23.htm" title="安卓加速器 | 9月23日19.4M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月23日19.4M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-25.htm" title="安卓加速器 | 9月25日18.3M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 9月25日18.3M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-28-top-vpn-node.htm" title="安卓加速器 | 10月28日18.8M/S|免费V2ray节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月28日18.8M/S|免费V2ray节点/Trojan节点/Singbox节点/Clash节点/Shadowrocket节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/share-vpn-2026-10-21.htm" title="安卓加速器 | 10月21日18M/S|免费V2ray节点/Trojan节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月21日18M/S|免费V2ray节点/Trojan节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-4-vpn-free.htm" title="安卓加速器 | 10月4日19.2M/S|免费SSR节点/Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月4日19.2M/S|免费SSR节点/Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-10-13.htm" title="安卓加速器 | 10月13日19.2M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月13日19.2M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-8-vpn-proxy.htm" title="安卓加速器 | 10月8日21.8M/S|免费SSR节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">安卓加速器 | 10月8日21.8M/S|免费SSR节点/Trojan节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -365,7 +365,10 @@ Clash不仅支持Windows、macOS和Linux等多个平台，还为移动端设备�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
